@@ -33,3 +33,9 @@ allows AI models to see contents of the user's home directory, and potentially
 conduct destructive work on the environoment. A more secure option is
 downloading OpenCode through a Docker container. This project then hardens the
 Docker install further.
+
+## Limitations
+
+This Compose build is designed for cloud-based AI usage only; it does not mount
+the proper volumes to detect local AI. Additionally, it does not update to the
+latest version, and must be manually changed.
