@@ -3,3 +3,22 @@ services:
     image: ghcr.io/anomalyco/opencode:latest
     container_name: opencode
     user: "1000:1000"
+    environment:
+      HOME: /home/opencode
+      TERM: "${TERM}"
+      BUN_TMPDIR: /home/opencode/.cache/opencode-tmp
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,nodev,size=512m
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 512
+    mem_limit: 4g
+    cpus: 2.0
+    working_dir: /work
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./home:/home/opencode
+      - ./work:/work
