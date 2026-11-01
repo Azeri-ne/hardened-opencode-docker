@@ -6,6 +6,8 @@ An isolated container for OpenCode.
 
 ## Installation
 
+Prerequisites: [Install Docker Compose](https://docs.docker.com/compose/install)
+
 ### Linux
 
 #### 1. Clone the repository
