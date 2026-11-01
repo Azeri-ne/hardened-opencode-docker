@@ -21,3 +21,13 @@ $ cd hardened-opencode-docker/
 ```bash
 $ sudo docker compose run --rm opencode
 ```
+
+## Reasoning
+
+OpenCode installed normally via curl, npm, yay, or other methods such as through
+Ollama CLI can access the entire working directory of the user that installed
+the application, which compromises the privacy and security of the system. This
+allows AI models to see contents of the user's home directory, and potentially
+conduct destructive work on the environoment. A more secure option is
+downloading OpenCode through a Docker container. This project then hardens the
+Docker install further.
