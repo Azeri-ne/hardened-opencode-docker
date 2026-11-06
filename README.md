@@ -12,10 +12,20 @@ Prerequisites: [Install Docker Compose](https://docs.docker.com/compose/install)
 
 #### 1. Clone the repository
 
+```bash
+$ git clone https://github.com/aze-rine/hardened-opencode-docker.git
+```
+
 #### 2. Go to directory
 
 ```bash
 $ cd hardened-opencode-docker/
+```
+
+#### 4. Create home/ and work/ dir
+
+```bash
+$ mkdir home work
 ```
 
 #### 3. Run the docker-compose.yml
@@ -30,7 +40,7 @@ OpenCode installed normally via curl, npm, yay, or other methods such as through
 Ollama CLI can access the entire working directory of the user that installed
 the application, which compromises the privacy and security of the system. This
 allows AI models to see contents of the user's home directory, and potentially
-conduct destructive work on the environoment. A more secure option is
+conduct destructive work on the environment. A more secure option is
 downloading OpenCode through a Docker container. This project then hardens the
 Docker install further.
 
