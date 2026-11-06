@@ -1,7 +1,6 @@
 services:
   opencode:
     image: ghcr.io/anomalyco/opencode:latest
-    container_name: opencode
     user: "1000:1000"
     environment:
       HOME: /home/opencode
