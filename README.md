@@ -22,13 +22,13 @@ $ git clone https://github.com/aze-rine/hardened-opencode-docker.git
 $ cd hardened-opencode-docker/
 ```
 
-#### 4. Create home/ and work/ dir
+#### 4. Run the install script
 
 ```bash
-$ mkdir home work
+$ bash install.sh
 ```
 
-#### 3. Run the docker-compose.yml
+#### To run the container (Must be in project directory)
 
 ```bash
 $ sudo docker compose run --rm opencode
